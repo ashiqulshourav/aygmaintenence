@@ -1,0 +1,12 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g opacity="0.502">
+<path opacity="0.502" d="M18 35C27.3888 35 35 27.3888 35 18C35 8.61116 27.3888 1 18 1C8.61116 1 1 8.61116 1 18C1 27.3888 8.61116 35 18 35Z" stroke="#AED6EE" stroke-width="2" stroke-linejoin="round"/>
+</g>
+<rect x="12" y="14" width="12" height="7" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_101_105" transform="scale(0.0833333 0.142857)"/>
+</pattern>
+<image id="image0_101_105" width="12" height="7" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHCAYAAAA8sqwkAAAABHNCSVQICAgIfAhkiAAAAJBJREFUGFdj5K47dJWBgeEtEHsA8Tcgxga4gII7gFiYEajhKJBhBcSngNgRiyaQ4v1AbAbEx0AaQAIngFgXiA8BsSsQ/4JawwakdwOxHRBfBmILkAaQHD9INxBrAfE+IPaEatgOpJ2A+BrUFR9hGrBpAomhKAYJIGtA1wTiw02G2oihAabpIFSBPZD+CFMMogEMFCS58EMs/AAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>
