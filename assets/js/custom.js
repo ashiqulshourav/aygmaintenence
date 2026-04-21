@@ -53,6 +53,7 @@ jQuery('.brand_carousel1').owlCarousel({
 	items:3,
 	dots:false,
 	responsiveClass:true,
+	autoplay: true,
 	responsive:{
         0:{
             items:2,
