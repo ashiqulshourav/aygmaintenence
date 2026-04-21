@@ -44,6 +44,7 @@ $('.hero-carousel').owlCarousel({
     nav:true,
 	items: 1,
 	dots: false,
+	autoplay: true,
 
 })
 jQuery('.brand_carousel1').owlCarousel({

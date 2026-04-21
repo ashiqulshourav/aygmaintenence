@@ -172,3 +172,9 @@
   font-weight: 800;
   font-size: 32px;
 }
+
+.header .phone_number a,
+.content_toggle_area .show_details p a {
+  font-weight: bold;
+  color: inherit;
+}
