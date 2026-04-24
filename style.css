@@ -87,6 +87,11 @@ body {
   font-weight: 400;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 ul,
 ol,
 li {
@@ -1004,13 +1009,15 @@ hr {
   margin: 0;
   color: rgba(35, 59, 94, 0.8);
   display: block;
+  text-transform: capitalize;
 }
 #menu > li.current-page-item > a,
 #menu > li:hover > a {
   color: #2f5398;
 }
 #menu li ul li.current-page-item > a,
-#menu li ul li:hover > a {
+#menu li ul li:hover > a,
+#menu li ul li.active > a {
   color: #2f5398;
   background-color: #f2fbff;
 }

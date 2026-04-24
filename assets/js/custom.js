@@ -177,4 +177,12 @@ jQuery(document).ready(function(){
         jQuery(".select_dropdown_btn").slideToggle("slow");
         jQuery(this).toggleClass('active');
     });
+
+	// set service for missing menu link
+	const menuLinks = document.querySelectorAll('#menu a[href^="#"]');
+	menuLinks.forEach((value)=>{
+		if (value.getAttribute('href') === '#') {
+			value.setAttribute('href', '#serviceArea');
+		}
+	})
 });
