@@ -45,8 +45,25 @@ $('.hero-carousel').owlCarousel({
 	items: 1,
 	dots: false,
 	autoplay: true,
-
 })
+
+$('.clients-feedback').owlCarousel({
+    loop: true,
+	items: 2,
+	margin: 20,
+	autoplay: true,
+	dots: false,
+
+	responsive:{
+        0:{
+            items:1,
+        },
+		768:{
+            items:2,
+        },
+    }
+})
+
 jQuery('.brand_carousel1').owlCarousel({
 	loop:true,
 	nav:true,

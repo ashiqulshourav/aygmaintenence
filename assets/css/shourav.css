@@ -265,3 +265,15 @@
 .h-testimonial .client_feedback::before {
   left: 30px;
 }
+
+.h-testimonial .owl-stage {
+  display: flex;
+}
+
+.h-testimonial .owl-item {
+  margin-bottom: 20px;
+}
+
+.h-testimonial .client_feedback {
+  margin-bottom: 0;
+}
