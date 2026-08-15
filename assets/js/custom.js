@@ -45,6 +45,7 @@ $('.hero-carousel').owlCarousel({
 	items: 1,
 	dots: false,
 	autoplay: true,
+	autoHeight: true,
 })
 
 $('.clients-feedback').owlCarousel({
