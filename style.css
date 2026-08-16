@@ -698,6 +698,25 @@ hr {
 .justify-content-center {
   justify-content: center;
 }
+/* Custom tweaks: button icon spacing and cleaning page layout */
+.orange_view_button i,
+.single-page-btn i {
+  margin-left: 8px;
+}
+
+/* Make the image take 60% and content 40% in split post_content rows */
+.post_content.d-flex .post_content_left {
+  width: 40%;
+}
+.post_content.d-flex .post_content_right {
+  width: 60%;
+}
+@media screen and (max-width: 991px) {
+  .post_content.d-flex .post_content_left,
+  .post_content.d-flex .post_content_right {
+    width: 100%;
+  }
+}
 .align-center {
   align-items: center;
 }
@@ -3077,8 +3096,7 @@ div.wpcf7-response-output {
 .services_icon {
   width: 44px;
   height: 44px;
-  background-color: #caeefb;
-  background-color: rgba(255, 177, 214, 0.2);
+  background-color: #b1f2ff33;
   border-radius: 8px;
   margin-bottom: 17px;
 }
@@ -3086,6 +3104,11 @@ div.wpcf7-response-output {
   max-width: 23px !important;
   width: auto !important;
   height: auto !important;
+}
+.services_icon i {
+  font-size: 22px;
+  color: #009b62;
+  line-height: 1;
 }
 .services_column h4 {
   font-size: 16px;
@@ -3103,12 +3126,52 @@ div.wpcf7-response-output {
   padding-bottom: 16px;
   font-weight: 200;
 }
+.services_cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+.service_cta_button {
+  flex: 1 1 0;
+  min-width: 120px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.service_cta_button.book_cta {
+  background: linear-gradient(135deg, #009b62, #3ce4a8);
+  color: #fff;
+  box-shadow: 0 8px 20px rgb(0 255 170 / 20%);
+}
+.service_cta_button.detail_cta {
+  background: #fff;
+  color: #0e4f86;
+  border: 1px solid #0e4f86;
+}
+.service_cta_button:hover {
+  transform: translateY(-1px);
+  text-decoration: none;
+}
 .services_photo {
   position: relative;
   max-width: 455px;
-}
-.services_photo {
   width: 100% !important;
+}
+.services_photo img {
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 /* .services_photo_inner {
 	width:100%;

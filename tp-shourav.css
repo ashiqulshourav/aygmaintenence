@@ -94,6 +94,21 @@
   margin-right: 2%;
 }
 
+.post_content_split .post_content_left {
+  max-width: 38%;
+  flex: 0 0 38%;
+  margin-right: 2%;
+}
+
+.post_content_split .post_content_right {
+  max-width: 60%;
+  flex: 0 0 60%;
+}
+
+.post_content_split .post_content_right .post_image {
+  padding-bottom: 0;
+}
+
 .post_article .post_content_list_items li::before {
   content: "\f111";
   color: var(--light-blue);
@@ -317,6 +332,13 @@
   }
   .post_article .post_contents .post_content_left {
     max-width: 100%;
+    margin-right: 0;
+  }
+
+  .post_content_split .post_content_left,
+  .post_content_split .post_content_right {
+    max-width: 100%;
+    flex: 0 0 100%;
     margin-right: 0;
   }
   .single_banner {
@@ -1579,11 +1601,115 @@
   margin-left: 10px;
 }
 
+.single-page-btn.icon-first i {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
 @media only screen and (max-width: 991px) {
   .single-page-btn {
     max-width: 100%;
   }
 }
+
+/* Cleaning services grid */
+.cleaning_services_grid_area {
+  padding: 40px 0 20px;
+}
+
+.cleaning_grid_title {
+  padding-bottom: 12px;
+}
+
+.cleaning_grid_subtitle {
+  color: rgba(65, 78, 92, 0.8);
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 720px;
+  margin: 0 auto 40px;
+}
+
+.cleaning_services_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.cleaning_service_card {
+  width: 100%;
+  margin: 0;
+  background: var(--aliceBlue);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.other_cleaning_services {
+  padding: 50px 0 60px;
+  background: #fff;
+}
+
+.cleaning_service_card_img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.cleaning_service_card_body {
+  padding: 20px 22px 26px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cleaning_service_card_body h4 {
+  font-size: 18px;
+  color: #414e5c;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+.cleaning_service_card_body h4 a {
+  color: inherit;
+}
+
+.cleaning_service_card_body p {
+  font-size: 15px;
+  line-height: 26px;
+  color: rgba(65, 78, 92, 0.8);
+  padding-bottom: 16px;
+  flex: 1;
+}
+
+.cleaning_service_card_body .orange_view_button {
+  max-width: 180px;
+  margin-bottom: 0;
+  font-size: 14px;
+  min-height: 44px;
+}
+
+@media only screen and (max-width: 991px) {
+  .cleaning_services_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .post_content_split .post_content_left,
+  .post_content_split .post_content_right {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .cleaning_services_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .h-testimonial {
   margin-top: 50px;
 }
